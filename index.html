@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhruvil Patel</title>
   <meta name="description"
-    content="Dhruvil Patel — Finance and accounting at iRage. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation." />
+    content="Dhruvil Patel — Finance and technology professional. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation." />
   <link rel="canonical" href="https://dhruvil-8.github.io/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307080c'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='28' fill='%23f4f4f5'%3EDP%3C/text%3E%3C/svg%3E" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dhruvil-8.github.io/" />
   <meta property="og:title" content="Dhruvil Patel" />
   <meta property="og:description"
-    content="Finance and accounting professional at iRage. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation." />
+    content="Finance and technology professional. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation." />
   <meta property="og:image" content="https://dhruvil-8.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Dhruvil Patel" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://dhruvil-8.github.io/" />
-  <meta property="twitter:title" content="Dhruvil Patel" />
-  <meta property="twitter:description"
-    content="Finance and accounting professional at iRage. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation." />
-  <meta property="twitter:image" content="https://dhruvil-8.github.io/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://dhruvil-8.github.io/" />
+  <meta name="twitter:title" content="Dhruvil Patel" />
+  <meta name="twitter:description"
+    content="Finance and technology professional. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation." />
+  <meta name="twitter:image" content="https://dhruvil-8.github.io/og-image.png" />
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -39,321 +46,947 @@
       "https://www.instagram.com/pateldhruvil._/",
       "https://huggingface.co/Dhruvil8"
     ],
-    "jobTitle": "Finance Professional",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "iRage"
-    },
+    "jobTitle": "Finance & Technology Professional",
+    "knowsAbout": [
+      "Financial Markets",
+      "Process Automation",
+      "Macroeconomics",
+      "Accounting & Taxation",
+      "Knowledge Systems"
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Mumbai",
       "addressCountry": "IN"
     },
-    "description": "Finance professional at a top-10 HFT(iRage) firm in India. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation."
+    "description": "Finance and technology professional. Exploring ideas across financial markets, knowledge systems, and technology and turning them into software through research and experimentation."
   }
+  </script>
+
+  <!-- Prevent theme flash before first paint -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (_) {}
+    })();
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            serif: ['Lora', 'Georgia', 'serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            sand: 'var(--bg)',
-            stone: 'var(--card)',
-            ink: 'var(--fg)',
-            charcoal: 'var(--fg)',
-            wheat: 'var(--border)',
-            rust: 'rgb(var(--accent-rgb) / <alpha-value>)',
-            accent: 'rgb(var(--accent-rgb) / <alpha-value>)',
-            sage: 'var(--muted)',
-          },
-          animation: {
-            'fade-in': 'fadeIn 0.8s ease-out forwards',
-            'slide-up': 'slideUp 0.8s ease-out forwards',
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0' },
-              '100%': { opacity: '1' },
-            },
-            slideUp: {
-              '0%': { opacity: '0', transform: 'translateY(24px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-          },
-        },
-      },
-    }
-  </script>
 
   <style>
     :root {
-      --bg: #FFFFFF;
-      --fg: #0A0A0A;
-      --muted: #6B7280;
-      --accent: #000000;
-      --accent-rgb: 0 0 0;
-      --card: #FCFCFD;
-      --border: #E5E7EB;
-      --border-rgb: 229 231 235;
+      --bg: #fafafa;
+      --bg-elevated: rgba(250, 250, 250, 0.82);
+      --fg: #0b0c10;
+      --muted: #5b606b;
+      --card: #ffffff;
+      --card-hover: #fcfcfd;
+      --border: #e4e6eb;
+      --border-strong: #c8cdd6;
+      --accent: #0b0c10;
+      --accent-fg: #ffffff;
+      --glow-cool: rgba(59, 130, 246, 0.14);
+      --glow-warm: rgba(217, 119, 6, 0.12);
+      --pill-bg: rgba(11, 12, 16, 0.04);
+      --shadow-card: 0 18px 40px -18px rgba(11, 12, 16, 0.12);
+      --radius-lg: 1.25rem;
+      --radius-xl: 1.75rem;
+      --nav-height: 4.25rem;
     }
 
     .dark {
-      --bg: #09090B;
-      --fg: #F4F4F5;
-      --muted: #8F9099;
-      --accent: #FFFFFF;
-      --accent-rgb: 255 255 255;
-      --card: #18181B;
-      --border: #27272A;
-      --border-rgb: 39 39 42;
+      --bg: #07080c;
+      --bg-elevated: rgba(7, 8, 12, 0.78);
+      --fg: #f4f4f5;
+      --muted: #9398a4;
+      --card: #0e1017;
+      --card-hover: #121520;
+      --border: #1e2230;
+      --border-strong: #32384e;
+      --accent: #f4f4f5;
+      --accent-fg: #07080c;
+      --glow-cool: rgba(96, 165, 250, 0.18);
+      --glow-warm: rgba(245, 158, 11, 0.16);
+      --pill-bg: rgba(244, 244, 245, 0.06);
+      --shadow-card: 0 24px 48px -20px rgba(0, 0, 0, 0.7);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--nav-height) + 1.5rem);
     }
 
     body {
+      margin: 0;
       background-color: var(--bg);
       color: var(--fg);
-      transition: background-color 0.4s ease, color 0.4s ease;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.35s ease, color 0.35s ease;
     }
 
-    .card-bg {
-      background-color: var(--card);
-      transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    ::selection {
+      background: rgba(96, 165, 250, 0.25);
+      color: var(--fg);
     }
 
-    .card-bg:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.08);
+    img,
+    svg {
+      display: block;
     }
 
-    .dark .card-bg:hover {
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .border-subtle {
-      border-color: var(--border);
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
     }
 
-    .text-muted {
-      color: var(--muted);
+    .serif {
+      font-family: 'Lora', Georgia, serif;
     }
 
-    .accent-text {
-      color: var(--accent);
-    }
-
-    .accent-border {
-      border-color: var(--accent);
-    }
-
-    .accent-bg {
-      background-color: var(--accent);
-    }
-
-    .hero-overlay {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.94) 100%);
-    }
-
-    .dark .hero-overlay {
-      background: linear-gradient(135deg, rgba(9, 9, 11, 0.94) 0%, rgba(9, 9, 11, 0.8) 50%, rgba(9, 9, 11, 0.94) 100%);
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .section-line {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    .mono {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
     }
 
     .tag {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
       font-size: 0.7rem;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      color: var(--muted);
     }
 
-    .link-arrow {
-      position: relative;
+    .container {
+      width: 100%;
+      max-width: 72rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Navigation */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      height: var(--nav-height);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background-color: var(--bg-elevated);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
       display: inline-flex;
       align-items: center;
-      gap: 0.25rem;
-      transition: gap 0.2s ease;
+      gap: 0.625rem;
+      font-weight: 500;
+      font-size: 0.925rem;
+      letter-spacing: -0.01em;
     }
 
-    .link-arrow:hover {
-      gap: 0.5rem;
+    .brand-mark {
+      width: 1.85rem;
+      height: 1.85rem;
+      border-radius: 0.55rem;
+      border: 1px solid var(--border-strong);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.02em;
+      background: var(--pill-bg);
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      position: relative;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible {
+      color: var(--fg);
     }
 
     .nav-link::after {
       content: '';
       position: absolute;
-      bottom: -2px;
       left: 0;
+      bottom: -4px;
       width: 0;
       height: 1px;
       background-color: var(--accent);
-      transition: width 0.3s ease;
+      transition: width 0.25s ease;
     }
 
-    .nav-link:hover::after {
+    .nav-link:hover::after,
+    .nav-link:focus-visible::after {
       width: 100%;
     }
 
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
     }
 
-    ::-webkit-scrollbar-track {
+    .social-row {
+      display: none;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    .icon-btn {
+      width: 2.15rem;
+      height: 2.15rem;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .icon-btn:hover,
+    .icon-btn:focus-visible {
+      color: var(--fg);
+      background-color: var(--pill-bg);
+    }
+
+    .icon-btn svg {
+      width: 1.05rem;
+      height: 1.05rem;
+    }
+
+    .mobile-menu-btn {
+      display: inline-flex;
+    }
+
+    .mobile-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-height);
+      left: 0;
+      right: 0;
+      z-index: 49;
       background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem 1.25rem;
     }
 
-    ::-webkit-scrollbar-thumb {
-      background: var(--border);
-      border-radius: 4px;
+    .mobile-drawer.open {
+      display: block;
     }
 
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--muted);
+    .mobile-drawer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .mobile-drawer-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--muted);
+      padding: 0.25rem 0;
+    }
+
+    .mobile-drawer-links a:hover {
+      color: var(--fg);
+    }
+
+    .mobile-drawer-socials {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (min-width: 640px) {
+      .social-row {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: none;
+      }
+
+      .mobile-drawer {
+        display: none !important;
+      }
+    }
+
+    /* Sun / Moon toggle icons */
+    .icon-sun {
+      display: none;
+    }
+
+    .icon-moon {
+      display: block;
+    }
+
+    .dark .icon-sun {
+      display: block;
+    }
+
+    .dark .icon-moon {
+      display: none;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: calc(var(--nav-height) + 3.5rem) 0 4.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 68% 58% at 50% 48%, var(--bg) 0%, rgba(250, 250, 250, 0.86) 42%, rgba(250, 250, 250, 0.25) 74%, var(--bg) 100%),
+        linear-gradient(to bottom, var(--bg) 0%, transparent 16%, transparent 80%, var(--bg) 100%);
+    }
+
+    .dark .hero-vignette {
+      background:
+        radial-gradient(ellipse 68% 58% at 50% 48%, var(--bg) 0%, rgba(7, 8, 12, 0.88) 44%, rgba(7, 8, 12, 0.28) 76%, var(--bg) 100%),
+        linear-gradient(to bottom, var(--bg) 0%, transparent 16%, transparent 80%, var(--bg) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 48rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      backdrop-filter: blur(8px);
+      margin-bottom: 1.75rem;
+    }
+
+    .pulse-dot {
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 9999px;
+      background: #f59e0b;
+      box-shadow: 0 0 10px rgba(245, 158, 11, 0.7);
+      animation: pulseDot 2.4s ease-in-out infinite;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.45;
+        transform: scale(0.85);
+      }
+    }
+
+    .hero-title {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(3rem, 8vw, 5.75rem);
+      line-height: 0.98;
+      letter-spacing: -0.025em;
+      margin: 0 0 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--muted);
+      max-width: 39rem;
+      margin: 0 auto 2.25rem;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.875rem;
+      margin-bottom: 2.75rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 9999px;
+      background: var(--accent);
+      color: var(--accent-fg);
+      font-weight: 500;
+      font-size: 0.925rem;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg-elevated);
+      backdrop-filter: blur(8px);
+      font-weight: 500;
+      font-size: 0.925rem;
+      transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .hero-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      max-width: 34rem;
+      margin: 0 auto;
+    }
+
+    /* Main Sections */
+    main {
+      padding: 5.5rem 0 4.5rem;
+    }
+
+    .section {
+      margin-bottom: 6.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin: 0.45rem 0 0;
+      letter-spacing: -0.02em;
+    }
+
+    .section-rule {
+      display: none;
+      height: 1px;
+      flex: 1;
+      max-width: 14rem;
+      background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+      margin-bottom: 0.6rem;
+    }
+
+    @media (min-width: 768px) {
+      .section-rule {
+        display: block;
+      }
+    }
+
+    /* Grids & Cards */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      position: relative;
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      background-color: var(--card-hover);
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-card);
+    }
+
+    .card:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--pill-bg);
+    }
+
+    .work-icon {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 0.75rem;
+      background: var(--pill-bg);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: var(--fg);
+    }
+
+    .work-icon svg {
+      width: 1.35rem;
+      height: 1.35rem;
+    }
+
+    .card-title {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 500;
+      font-size: 1.35rem;
+      line-height: 1.25;
+      margin: 0 0 0.65rem;
+    }
+
+    .card-title-sm {
+      font-size: 1.22rem;
+    }
+
+    .card-desc {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.93rem;
+      line-height: 1.62;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .badge-live {
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      background: var(--pill-bg);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.64rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .badge-live:hover {
+      border-color: var(--accent);
+      color: var(--fg);
+    }
+
+    .badge-dot {
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 9999px;
+      background: #22c55e;
+    }
+
+    .stretched-link::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .arrow-up-right {
+      display: inline-block;
+      transition: transform 0.2s ease;
+      font-family: system-ui, sans-serif;
+    }
+
+    .card:hover .arrow-up-right {
+      transform: translate(2px, -2px);
+    }
+
+    /* Domain Knowledge Lists */
+    .bullet-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .bullet-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .bullet-dot {
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 9999px;
+      background: var(--accent);
+      margin-top: 0.55rem;
+      flex-shrink: 0;
+    }
+
+    /* Education */
+    .edu-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .edu-card {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Contact CTA */
+    .cta-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background:
+        radial-gradient(circle at 18% 20%, var(--glow-cool), transparent 48%),
+        radial-gradient(circle at 82% 80%, var(--glow-warm), transparent 48%),
+        var(--card);
+      padding: clamp(2.5rem, 6vw, 4rem) 1.5rem;
+      text-align: center;
+    }
+
+    .cta-title {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      margin: 0 0 0.75rem;
+    }
+
+    .cta-sub {
+      color: var(--muted);
+      max-width: 30rem;
+      margin: 0 auto 2rem;
+      font-size: 0.96rem;
+    }
+
+    .cta-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 2.25rem 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .footer-right a:hover {
+      color: var(--fg);
+    }
+
+    /* Reveal animation (JS-gated) */
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .js .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Focus rings */
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .pulse-dot {
+        animation: none;
+      }
+
+      .js .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .card,
+      .btn-primary,
+      .btn-secondary,
+      .arrow-up-right {
+        transition: none;
+      }
     }
   </style>
 </head>
 
-<body
-  class="antialiased selection:bg-accent/20 selection:text-ink dark:selection:bg-accent/40 dark:selection:text-white">
-
+<body id="top">
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[var(--bg)]/80 border-b border-subtle">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <div class="w-8"></div>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Dhruvil Patel — Back to top">
+        <span class="brand-mark" aria-hidden="true">DP</span>
+        <span>Dhruvil Patel</span>
+      </a>
 
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#work"
-          class="nav-link relative text-sm font-medium text-muted hover:text-[var(--fg)] transition-colors">Work</a>
-        <a href="#projects"
-          class="nav-link relative text-sm font-medium text-muted hover:text-[var(--fg)] transition-colors">Projects</a>
-        <a href="#expertise"
-          class="nav-link relative text-sm font-medium text-muted hover:text-[var(--fg)] transition-colors">Expertise</a>
-        <a href="#education"
-          class="nav-link relative text-sm font-medium text-muted hover:text-[var(--fg)] transition-colors">Education</a>
+      <div class="nav-links">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
       </div>
 
-      <div class="flex items-center gap-4">
-        <!-- Socials row (hidden on mobile navbar for layout protection) -->
-        <div class="hidden sm:flex items-center gap-1">
-          <a href="https://github.com/Dhruvil-8" target="_blank" rel="noopener noreferrer"
-            class="p-2 rounded-full text-muted hover:text-[var(--fg)] hover:bg-[var(--border)]/50 transition-colors"
-            title="GitHub">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+      <div class="nav-actions">
+        <div class="social-row">
+          <a href="https://github.com/Dhruvil-8" target="_blank" rel="noopener noreferrer" class="icon-btn"
+            aria-label="GitHub" title="GitHub">
+            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
             </svg>
           </a>
-          <a href="https://linkedin.com/in/dhruvil-patel8" target="_blank" rel="noopener noreferrer"
-            class="p-2 rounded-full text-muted hover:text-[var(--fg)] hover:bg-[var(--border)]/50 transition-colors"
-            title="LinkedIn">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <a href="https://linkedin.com/in/dhruvil-patel8" target="_blank" rel="noopener noreferrer" class="icon-btn"
+            aria-label="LinkedIn" title="LinkedIn">
+            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
           </a>
-          <a href="https://x.com/DhruvilPatel__" target="_blank" rel="noopener noreferrer"
-            class="p-2 rounded-full text-muted hover:text-[var(--fg)] hover:bg-[var(--border)]/50 transition-colors"
-            title="X / Twitter">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <a href="https://x.com/DhruvilPatel__" target="_blank" rel="noopener noreferrer" class="icon-btn"
+            aria-label="X / Twitter" title="X / Twitter">
+            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
             </svg>
           </a>
-          <a href="https://huggingface.co/Dhruvil8" target="_blank" rel="noopener noreferrer"
-            class="p-2 rounded-full text-muted hover:text-[var(--fg)] hover:bg-[var(--border)]/50 transition-colors flex items-center justify-center"
-            title="Hugging Face">
-            <span class="text-sm leading-none filter grayscale hover:grayscale-0 transition-all">🤗</span>
+          <a href="https://huggingface.co/Dhruvil8" target="_blank" rel="noopener noreferrer" class="icon-btn"
+            aria-label="Hugging Face" title="Hugging Face">
+            <svg fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="9" cy="10" r="1" fill="currentColor" stroke="none" />
+              <circle cx="15" cy="10" r="1" fill="currentColor" stroke="none" />
+              <path stroke-linecap="round" d="M8.5 14.2c1 1.4 2.2 2 3.5 2s2.5-.6 3.5-2" />
+            </svg>
           </a>
-          <a href="https://www.instagram.com/pateldhruvil._/" target="_blank" rel="noopener noreferrer"
-            class="p-2 rounded-full text-muted hover:text-[var(--fg)] hover:bg-[var(--border)]/50 transition-colors"
-            title="Instagram">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <a href="https://www.instagram.com/pateldhruvil._/" target="_blank" rel="noopener noreferrer" class="icon-btn"
+            aria-label="Instagram" title="Instagram">
+            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
             </svg>
           </a>
         </div>
 
-        <button id="theme-toggle" class="p-2 rounded-full hover:bg-[var(--border)]/50 transition-colors"
-          aria-label="Toggle dark mode">
-          <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
-            </path>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="icon-sun" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
           </svg>
-          <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          <svg class="icon-moon" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobile-drawer">
+          <svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 z-0">
-      <!-- Monochrome Hero Image Background -->
-      <img
-        src="https://mcp-tools-z-image-turbo.hf.space/--replicas/l8p6f/gradio_api/file=/tmp/gradio/4a2a4df9f5d0fcf77c9a35c401d7657720025755a0bb43459f71717459ada386/image.webp"
-        alt=""
-        class="w-full h-full object-cover opacity-20 dark:opacity-10 grayscale contrast-[1.2] brightness-[0.85]" />
-      <div class="hero-overlay absolute inset-0"></div>
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#expertise">Expertise</a>
     </div>
+    <div class="mobile-drawer-socials">
+      <a href="https://github.com/Dhruvil-8" target="_blank" rel="noopener noreferrer" class="tag">GitHub</a>
+      <a href="https://linkedin.com/in/dhruvil-patel8" target="_blank" rel="noopener noreferrer" class="tag">LinkedIn</a>
+      <a href="https://x.com/DhruvilPatel__" target="_blank" rel="noopener noreferrer" class="tag">X</a>
+      <a href="https://huggingface.co/Dhruvil8" target="_blank" rel="noopener noreferrer" class="tag">HF</a>
+      <a href="https://www.instagram.com/pateldhruvil._/" target="_blank" rel="noopener noreferrer" class="tag">IG</a>
+    </div>
+  </div>
 
-    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-20 text-center">
-      <p class="tag accent-text mb-6 animate-fade-in">Mumbai, India</p>
-      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8 animate-slide-up">
-        Dhruvil Patel
-      </h1>
-      <p class="text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed mb-8 animate-slide-up"
-        style="animation-delay: 0.1s">
-        Exploring ideas across financial markets, knowledge systems, and technology and turning them into software
-        through research and experimentation.
-      </p>
+  <!-- Hero -->
+  <header class="hero">
+    <canvas id="ascii-hero" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-vignette" aria-hidden="true"></div>
 
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span class="tag">Mumbai, India</span>
+        </div>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up"
-        style="animation-delay: 0.2s">
-        <a href="#projects"
-          class="px-8 py-3.5 accent-bg text-white dark:text-zinc-950 font-medium rounded-full hover:opacity-90 transition-opacity">
-          Explore projects
-        </a>
-        <a href="#work"
-          class="px-8 py-3.5 border border-subtle rounded-full font-medium hover:border-[var(--accent)] transition-colors">
-          See my work
-        </a>
-      </div>
+        <h1 class="hero-title">Dhruvil Patel</h1>
 
-      <div class="mt-16 animate-fade-in" style="animation-delay: 0.4s">
-        <p class="text-sm text-muted max-w-xl mx-auto leading-relaxed">
+        <p class="hero-subtitle">
+          Exploring ideas across financial markets, knowledge systems, and technology and turning them into software
+          through research and experimentation.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            Explore projects
+            <span aria-hidden="true">↓</span>
+          </a>
+          <a href="#work" class="btn-secondary">
+            See my work
+          </a>
+        </div>
+
+        <p class="hero-note">
           How I build: I identify the problem, define scope, research data sources, and decide the approach. Code is
           written with AI assistance.
         </p>
@@ -361,588 +994,296 @@
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-6 py-20">
+  <main class="container">
 
     <!-- Work Section -->
-    <section id="work" class="mb-28 reveal">
-      <div class="flex items-end justify-between mb-12">
+    <section id="work" class="section reveal">
+      <div class="section-header">
         <div>
-          <p class="tag accent-text mb-3">Automation at HFT Firm</p>
-          <h2 class="font-serif text-4xl md:text-5xl">Selected Work</h2>
+          <p class="tag">Automation at HFT Firm</p>
+          <h2 class="section-title">Selected Work</h2>
         </div>
-        <div class="hidden md:block section-line w-48"></div>
+        <div class="section-rule" aria-hidden="true"></div>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+      <div class="grid-3">
+        <article class="card">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 accent-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
-                </path>
+            <div class="work-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 class="font-serif text-2xl mb-3">Market Share Dashboard</h3>
-            <p class="text-muted leading-relaxed mb-4">
+            <h3 class="card-title">Market Share Dashboard</h3>
+            <p class="card-desc">
               Automated calculation of firm's market share using exchange EOD data. Segment-wise bifurcation across
               equity and F&O with weekly, monthly, and expiry-series reporting.
             </p>
           </div>
-          <span class="tag text-xs accent-text">Replaced a fully manual process</span>
+          <span class="tag">Replaced a fully manual process</span>
         </article>
 
-        <article class="card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+        <article class="card">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 accent-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                </path>
+            <div class="work-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 class="font-serif text-2xl mb-3">Firm Volume Reporting</h3>
-            <p class="text-muted leading-relaxed mb-4">
+            <h3 class="card-title">Firm Volume Reporting</h3>
+            <p class="card-desc">
               Automated internal trading volume reporting. Built in Google Apps Script within the existing Sheets — zero
               new tooling required.
             </p>
           </div>
-          <span class="tag text-xs accent-text">Seamless integration</span>
+          <span class="tag">Seamless integration</span>
         </article>
 
-        <article class="card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+        <article class="card">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 accent-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2-2v10a2 2 0 002 2z">
-                </path>
+            <div class="work-icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 class="font-serif text-2xl mb-3">TDS Certificate Dispatch</h3>
-            <p class="text-muted leading-relaxed mb-4">
+            <h3 class="card-title">TDS Certificate Dispatch</h3>
+            <p class="card-desc">
               Python script to automate bulk dispatch of TDS certificates. Eliminated manual one-by-one emailing
               entirely.
             </p>
           </div>
-          <span class="tag text-xs accent-text">Process automation</span>
+          <span class="tag">Process automation</span>
         </article>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="mb-28 reveal">
-      <div class="flex items-end justify-between mb-12">
+    <section id="projects" class="section reveal">
+      <div class="section-header">
         <div>
-          <p class="tag accent-text mb-3">Open Source & Experiments</p>
-          <h2 class="font-serif text-4xl md:text-5xl">Projects</h2>
+          <p class="tag">Curiosity &amp; Experiments</p>
+          <h2 class="section-title">Projects</h2>
         </div>
-        <div class="hidden md:block section-line w-48"></div>
+        <div class="section-rule" aria-hidden="true"></div>
       </div>
 
-      <!-- Vedic & Dharma -->
-      <div class="mb-16">
-        <h3 class="font-serif text-3xl mb-8 flex items-center gap-3">
-          <span class="w-2 h-2 rounded-full accent-bg"></span>
-          Vedic & Dharma
-        </h3>
-        <div class="grid md:grid-cols-2 gap-6">
-
-          <!-- DharmaPragya -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+      <div class="grid-2">
+          <article class="card" data-category="vedic" data-live="true">
             <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">TypeScript · Go</span>
+              <div class="card-top">
+                <span class="tag">Q&A Platform · RAG</span>
                 <a href="https://dharma-pragya.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  class="relative z-10 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-wider uppercase text-muted border border-subtle rounded-full px-2.5 py-0.5 hover:border-[var(--accent)] hover:text-[var(--fg)] transition-colors">
-                  <span class="w-1 h-1 rounded-full bg-accent animate-pulse"></span>
-                  live site
+                  class="badge-live">
+                  <span class="badge-dot" aria-hidden="true"></span>
+                  Live site
                 </a>
               </div>
-              <h4 class="font-serif text-2xl mb-2 group-hover:accent-text transition-colors">
+              <h4 class="card-title">
                 <a href="https://github.com/Dhruvil-8/DharmaPragya" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  DharmaPragya <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                  class="stretched-link">
+                  DharmaPragya <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted leading-relaxed">Q&A platform over Vedas, Upanishads, Gita, Ramayana, and
-                Mahabharata.
-                Extension of the Bhagavad Gita RAG project.</p>
+              <p class="card-desc">Q&A platform over Vedas, Upanishads, Gita, Ramayana, and Mahabharata. Extension of
+                my Bhagavad Gita RAG project.</p>
             </div>
-          </div>
+          </article>
 
-          <!-- SrimadBhagavadGita -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+          <article class="card" data-category="vedic" data-live="true">
             <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Python · RAG</span>
-              </div>
-              <h4 class="font-serif text-2xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/SrimadBhgavadGita" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  SrimadBhagavadGita <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted leading-relaxed">Full-stack app for answering questions from the Bhagavad Gita using
-                retrieval-augmented generation. The foundation that DharmaPragya extended from.</p>
-            </div>
-          </div>
-
-          <!-- VedicJyotish -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Rust · TypeScript · Kotlin · Python</span>
+              <div class="card-top">
+                <span class="tag">Vedic Astrology · AI</span>
                 <a href="https://vedic-jyotish.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  class="relative z-10 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-wider uppercase text-muted border border-subtle rounded-full px-2.5 py-0.5 hover:border-[var(--accent)] hover:text-[var(--fg)] transition-colors">
-                  <span class="w-1 h-1 rounded-full bg-accent animate-pulse"></span>
-                  live site
+                  class="badge-live">
+                  <span class="badge-dot" aria-hidden="true"></span>
+                  Live site
                 </a>
               </div>
-              <h4 class="font-serif text-2xl mb-2 group-hover:accent-text transition-colors">
+              <h4 class="card-title">
                 <a href="https://github.com/Dhruvil-8/VedicJyotish" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  VedicJyotish <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                  class="stretched-link">
+                  VedicJyotish <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted leading-relaxed">Full-stack Vedic astrology app — chart calculations with
-                AI-generated
+              <p class="card-desc">Full-stack Vedic astrology app — chart calculations with AI-generated
                 interpretations.</p>
             </div>
-          </div>
+          </article>
 
-          <!-- SanskritGPT-Vedic -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+          <article class="card" data-category="vedic" data-live="true">
             <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Python · NLP · ML</span>
+              <div class="card-top">
+                <span class="tag">Language Model · Experiment</span>
                 <a href="https://huggingface.co/Dhruvil8/SanskritGPT-Vedic" target="_blank" rel="noopener noreferrer"
-                  class="relative z-10 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-wider uppercase text-muted border border-subtle rounded-full px-2.5 py-0.5 hover:border-[var(--accent)] hover:text-[var(--fg)] transition-colors">
-                  <span>🤗</span> HF Model
+                  class="badge-live">
+                  HF Model
                 </a>
               </div>
-              <h4 class="font-serif text-2xl mb-2 group-hover:accent-text transition-colors">
+              <h4 class="card-title">
                 <a href="https://github.com/Dhruvil-8/SanskritGPT-Vedic" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  SanskritGPT-Vedic <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                  class="stretched-link">
+                  SanskritGPT-Vedic <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted leading-relaxed">Transformer trained from scratch on Rigveda, Yajurveda, and
-                Atharvaveda in Devanagari.</p>
+              <p class="card-desc">Transformer trained from scratch on Rigveda, Yajurveda, and Atharvaveda in
+                Devanagari.</p>
             </div>
-          </div>
+          </article>
 
-          <!-- SanskritGPT-Itihasa -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+          <article class="card" data-category="vedic" data-live="true">
             <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Python · NLP · ML</span>
+              <div class="card-top">
+                <span class="tag">Language Model · Experiment</span>
                 <a href="https://huggingface.co/Dhruvil8/SanskritGPT-Itihasa" target="_blank" rel="noopener noreferrer"
-                  class="relative z-10 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-wider uppercase text-muted border border-subtle rounded-full px-2.5 py-0.5 hover:border-[var(--accent)] hover:text-[var(--fg)] transition-colors">
-                  <span>🤗</span> HF Model
+                  class="badge-live">
+                  HF Model
                 </a>
               </div>
-              <h4 class="font-serif text-2xl mb-2 group-hover:accent-text transition-colors">
+              <h4 class="card-title">
                 <a href="https://github.com/Dhruvil-8/SanskritGPT-Itihasa" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  SanskritGPT-Itihasa <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                  class="stretched-link">
+                  SanskritGPT-Itihasa <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted leading-relaxed">Transformer trained from scratch on Mahabharata and Ramayana corpus.
-              </p>
+              <p class="card-desc">Transformer trained from scratch on Mahabharata and Ramayana corpus.</p>
             </div>
-          </div>
+          </article>
 
-          <!-- SanatanDharmaDirectory -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+          <article class="card" data-category="vedic" data-live="true">
             <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Resource Index</span>
+              <div class="card-top">
+                <span class="tag">Resource Index</span>
                 <a href="https://dhruvil-8.github.io/SanatanDharmaDirectory/site/" target="_blank"
-                  rel="noopener noreferrer"
-                  class="relative z-10 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-wider uppercase text-muted border border-subtle rounded-full px-2.5 py-0.5 hover:border-[var(--accent)] hover:text-[var(--fg)] transition-colors">
-                  <span class="w-1 h-1 rounded-full bg-accent animate-pulse"></span>
-                  live site
+                  rel="noopener noreferrer" class="badge-live">
+                  <span class="badge-dot" aria-hidden="true"></span>
+                  Live site
                 </a>
               </div>
-              <h4 class="font-serif text-2xl mb-2 group-hover:accent-text transition-colors">
+              <h4 class="card-title">
                 <a href="https://github.com/Dhruvil-8/SanatanDharmaDirectory" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  SanatanDharmaDirectory <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                  class="stretched-link">
+                  SanatanDharmaDirectory <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted leading-relaxed">Index of publicly available Vedic texts, datasets, and archives.
-                Started as a resource list for my own projects.</p>
+              <p class="card-desc">Index of publicly available Vedic texts, datasets, and archives. Started as a
+                resource list for my own projects.</p>
             </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Financial Markets -->
-      <div class="mb-16">
-        <h3 class="font-serif text-3xl mb-8 flex items-center gap-3">
-          <span class="w-2 h-2 rounded-full accent-bg"></span>
-          Financial Markets
-        </h3>
-        <div class="grid md:grid-cols-3 gap-6">
-
-          <!-- IndiaMacro -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+          </article>
+          <article class="card">
             <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Python · macro</span>
+              <div class="card-top">
+                <span class="tag">Macro Research</span>
               </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/IndiaMacro" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  IndiaMacro <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">Macro research system covering leading indicators,
-                structural
-                liquidity, and financial conditions.</p>
-            </div>
-          </div>
-
-          <!-- MacroMonitor -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Python</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
+              <h4 class="card-title">
                 <a href="https://github.com/Dhruvil-8/MacroMonitor" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  MacroMonitor <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                  class="stretched-link">
+                  MacroMonitor <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted text-sm leading-relaxed">Detects structural breaks in historical relationships
-                between
-                global macro drivers and asset classes.</p>
+              <p class="card-desc">Detects structural breaks in historical relationships between global macro drivers
+                and asset classes.</p>
             </div>
-          </div>
+          </article>
 
-          <!-- CryptoAlpha -->
-          <div class="relative group card-bg rounded-2xl p-8 border border-subtle flex flex-col justify-between h-full">
+          <article class="card">
             <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="tag accent-text">Python · ML · quant</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/CryptoAlpha" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  CryptoAlpha <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">Experiments combining quant and ML on Binance data.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Tools & Exploration -->
-      <div>
-        <h3 class="font-serif text-3xl mb-8 flex items-center gap-3">
-          <span class="w-2 h-2 rounded-full accent-bg"></span>
-          Tools & Exploration
-        </h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-          <!-- GlobalNewsTracker -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">Python</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/GlobalNewsTracker" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  GlobalNewsTracker <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">Tracks global news on an interactive map. Aggregates RSS
-                feeds
-                and clusters events geographically.</p>
-            </div>
-          </div>
-
-          <!-- WorldState -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">TypeScript · Go · Python</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/WorldState" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  WorldState <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">Extension of GlobalNewsTracker. Ongoing real-time global
-                event
-                tracking.</p>
-            </div>
-          </div>
-
-          <!-- chaturanga -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">TypeScript · P2P</span>
+              <div class="card-top">
+                <span class="tag">P2P Chess · Nostr</span>
                 <a href="https://dhruvil-8.github.io/chaturanga/" target="_blank" rel="noopener noreferrer"
-                  class="relative z-10 inline-flex items-center gap-1.5 font-mono text-[10px] tracking-wider uppercase text-muted border border-subtle rounded-full px-2.5 py-0.5 hover:border-[var(--accent)] hover:text-[var(--fg)] transition-colors">
-                  <span class="w-1 h-1 rounded-full bg-accent animate-pulse"></span>
-                  live
+                  class="badge-live">
+                  <span class="badge-dot" aria-hidden="true"></span>
+                  Live
                 </a>
               </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
+              <h4 class="card-title">
                 <a href="https://github.com/Dhruvil-8/chaturanga" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  chaturanga <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                  class="stretched-link">
+                  chaturanga <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted text-sm leading-relaxed">Peer-to-peer chess over Nostr. Serverless, decentralized, no
-                accounts required.</p>
+              <p class="card-desc">Peer-to-peer chess over Nostr. Serverless, decentralized, no accounts required.</p>
             </div>
-          </div>
+          </article>
 
-          <!-- QuantumVault -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
+          <article class="card">
             <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">Python · post-quantum</span>
+              <div class="card-top">
+                <span class="tag">News Map · RSS</span>
               </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/QuantumVault" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  QuantumVault <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+              <h4 class="card-title">
+                <a href="https://github.com/Dhruvil-8/GlobalNewsTracker" target="_blank" rel="noopener noreferrer"
+                  class="stretched-link">
+                  GlobalNewsTracker <span class="arrow-up-right" aria-hidden="true">↗</span>
                 </a>
               </h4>
-              <p class="text-muted text-sm leading-relaxed">File encryption using post-quantum cryptography.</p>
+              <p class="card-desc">Tracks global news on an interactive map. Aggregates RSS feeds and clusters events
+                geographically.</p>
             </div>
-          </div>
-
-          <!-- Aether -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">Go · protocol</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/Aether" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  Aether <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">Decentralized broadcast protocol. No accounts, no servers,
-                append-only global stream.</p>
-            </div>
-          </div>
-
-          <!-- CleanPrompt -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">Python · privacy</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/CleanPrompt" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  CleanPrompt <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">OS-level tool that strips PII from text before it reaches an
-                LLM. Runs fully locally using Presidio.</p>
-            </div>
-          </div>
-
-          <!-- hwentropy -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">Assembly · C · Python</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/hwentropy" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  hwentropy <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">Hardware entropy library in x86-64 assembly with C wrapper
-                and
-                Python bindings. Built to explore LLMs at the assembly level.</p>
-            </div>
-          </div>
-
-          <!-- http1.c -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">C</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/http1.c" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  http1.c <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">Single-file embeddable HTTP/1.1 server in C. Built to
-                explore
-                C with AI.</p>
-            </div>
-          </div>
-
-          <!-- Hearth -->
-          <div class="relative group card-bg rounded-2xl p-6 border border-subtle flex flex-col justify-between h-full">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="tag accent-text">Rust</span>
-              </div>
-              <h4 class="font-serif text-xl mb-2 group-hover:accent-text transition-colors">
-                <a href="https://github.com/Dhruvil-8/Hearth" target="_blank" rel="noopener noreferrer"
-                  class="after:absolute after:inset-0">
-                  Hearth <span
-                    class="inline-block transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
-                </a>
-              </h4>
-              <p class="text-muted text-sm leading-relaxed">IoT privacy firewall. Behavioral traffic analysis and soft
-                blocking. Built to explore Rust.</p>
-            </div>
-          </div>
-
-        </div>
+          </article>
       </div>
+
+      <p style="margin-top: 2rem; text-align: center;">
+        <a href="https://github.com/Dhruvil-8?tab=repositories" target="_blank" rel="noopener noreferrer"
+          class="tag" style="text-decoration: underline; text-underline-offset: 4px;">
+          More experiments on GitHub ↗
+        </a>
+      </p>
     </section>
 
     <!-- Expertise -->
-    <section id="expertise" class="mb-28 reveal">
-      <div class="flex items-end justify-between mb-12">
+    <section id="expertise" class="section reveal">
+      <div class="section-header">
         <div>
-          <p class="tag accent-text mb-3">What I know</p>
-          <h2 class="font-serif text-4xl md:text-5xl">Domain Knowledge</h2>
+          <p class="tag">What I know</p>
+          <h2 class="section-title">Domain Knowledge</h2>
         </div>
-        <div class="hidden md:block section-line w-48"></div>
+        <div class="section-rule" aria-hidden="true"></div>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="card-bg rounded-2xl p-8 border border-subtle">
-          <h3 class="font-serif text-2xl mb-6">Financial Markets & Operations</h3>
-          <ul class="space-y-3 text-muted">
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full accent-bg mt-2"></span>
-              Equity & Derivatives Markets
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full accent-bg mt-2"></span>
-              Macroeconomics
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full accent-bg mt-2"></span>
-              Process automation
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full accent-bg mt-2"></span>
-              Accounting & taxation
-            </li>
-          </ul>
-        </div>
-
-
-        <div class="card-bg rounded-2xl p-8 border border-subtle">
-          <h3 class="font-serif text-2xl mb-6">How I Build</h3>
-          <ul class="space-y-3 text-muted">
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full accent-bg mt-2"></span>
-              Claude
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full accent-bg mt-2"></span>
-              Codex, ChatGPT
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full accent-bg mt-2"></span>
-              Gemini, Antigravity IDE , AI studio
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="mb-20 reveal">
-      <div class="flex items-end justify-between mb-12">
-        <div>
-          <p class="tag accent-text mb-3">Academic background</p>
-          <h2 class="font-serif text-4xl md:text-5xl">Education</h2>
-        </div>
-        <div class="hidden md:block section-line w-48"></div>
-      </div>
-
-      <div class="space-y-6">
-        <div
-          class="card-bg rounded-2xl p-8 border border-subtle flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div class="grid-2">
+        <div class="card">
           <div>
-            <h3 class="font-serif text-2xl mb-1">M.Com</h3>
-            <p class="text-muted">University of Mumbai — IDOL</p>
+            <h3 class="card-title">Financial Markets & Operations</h3>
+            <ul class="bullet-list">
+              <li><span class="bullet-dot" aria-hidden="true"></span>Equity & Derivatives Markets</li>
+              <li><span class="bullet-dot" aria-hidden="true"></span>Macroeconomics</li>
+              <li><span class="bullet-dot" aria-hidden="true"></span>Process Automation</li>
+              <li><span class="bullet-dot" aria-hidden="true"></span>Accounting & Taxation</li>
+            </ul>
           </div>
-          <span class="tag accent-text">2021 – 2024</span>
         </div>
 
-        <div
-          class="card-bg rounded-2xl p-8 border border-subtle flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="card">
           <div>
-            <h3 class="font-serif text-2xl mb-1">B.Com</h3>
-            <p class="text-muted">Narsee Monjee College of Commerce and Economics, Mumbai</p>
+            <h3 class="card-title">How I Build</h3>
+            <ul class="bullet-list">
+              <li><span class="bullet-dot" aria-hidden="true"></span>Problem scoping &amp; workflow design</li>
+              <li><span class="bullet-dot" aria-hidden="true"></span>Data sourcing &amp; domain research</li>
+              <li><span class="bullet-dot" aria-hidden="true"></span>AI-assisted prototyping &amp; shipping</li>
+              <li><span class="bullet-dot" aria-hidden="true"></span>Claude, Codex, ChatGPT, Gemini, Antigravity IDE, AI Studio</li>
+            </ul>
           </div>
-          <span class="tag accent-text">2018 – 2021</span>
         </div>
       </div>
     </section>
 
     <!-- Contact CTA -->
     <section class="reveal">
-      <div class="card-bg rounded-3xl p-12 md:p-16 border border-subtle text-center relative overflow-hidden">
-        <h2 class="font-serif text-4xl md:text-5xl mb-4">Find me online.</h2>
-        <div class="flex flex-wrap items-center justify-center gap-4">
-          <a href="https://github.com/Dhruvil-8" target="_blank" rel="noopener"
-            class="px-8 py-3.5 accent-bg text-white dark:text-zinc-950 font-medium rounded-full hover:opacity-90 transition-opacity">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/dhruvil-patel8" target="_blank" rel="noopener"
-            class="px-8 py-3.5 border border-subtle rounded-full font-medium hover:border-[var(--accent)] hover:text-[var(--fg)] transition-all">
-            LinkedIn
-          </a>
-          <a href="https://x.com/DhruvilPatel__" target="_blank" rel="noopener"
-            class="px-8 py-3.5 border border-subtle rounded-full font-medium hover:border-[var(--accent)] hover:text-[var(--fg)] transition-all">
-            X / Twitter
-          </a>
-          <a href="https://huggingface.co/Dhruvil8" target="_blank" rel="noopener"
-            class="px-8 py-3.5 border border-subtle rounded-full font-medium hover:border-[var(--accent)] hover:text-[var(--fg)] transition-all">
-            Hugging Face
-          </a>
-          <a href="https://www.instagram.com/pateldhruvil._/" target="_blank" rel="noopener"
-            class="px-8 py-3.5 border border-subtle rounded-full font-medium hover:border-[var(--accent)] hover:text-[var(--fg)] transition-all">
-            Instagram
-          </a>
+      <div class="cta-card">
+        <h2 class="cta-title" style="margin-bottom: 1.75rem;">Find me online.</h2>
+        <div class="cta-links">
+          <a href="https://github.com/Dhruvil-8" target="_blank" rel="noopener noreferrer" class="btn-primary">GitHub</a>
+          <a href="https://linkedin.com/in/dhruvil-patel8" target="_blank" rel="noopener noreferrer"
+            class="btn-secondary">LinkedIn</a>
+          <a href="https://x.com/DhruvilPatel__" target="_blank" rel="noopener noreferrer" class="btn-secondary">X /
+            Twitter</a>
+          <a href="https://huggingface.co/Dhruvil8" target="_blank" rel="noopener noreferrer"
+            class="btn-secondary">Hugging Face</a>
+          <a href="https://www.instagram.com/pateldhruvil._/" target="_blank" rel="noopener noreferrer"
+            class="btn-secondary">Instagram</a>
         </div>
       </div>
     </section>
@@ -950,74 +1291,171 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-subtle py-12">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="w-8 hidden md:block"></div>
-      <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-muted">
-        <a href="https://github.com/Dhruvil-8" target="_blank" rel="noopener noreferrer"
-          class="hover:text-[var(--fg)] transition-colors">GitHub</a>
-        <a href="https://linkedin.com/in/dhruvil-patel8" target="_blank" rel="noopener noreferrer"
-          class="hover:text-[var(--fg)] transition-colors">LinkedIn</a>
-        <a href="https://x.com/DhruvilPatel__" target="_blank" rel="noopener noreferrer"
-          class="hover:text-[var(--fg)] transition-colors">X / Twitter</a>
-        <a href="https://huggingface.co/Dhruvil8" target="_blank" rel="noopener noreferrer"
-          class="hover:text-[var(--fg)] transition-colors">Hugging Face</a>
-        <a href="https://www.instagram.com/pateldhruvil._/" target="_blank" rel="noopener noreferrer"
-          class="hover:text-[var(--fg)] transition-colors">Instagram</a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Dhruvil Patel.</span>
+      <div class="footer-right">
+        <a href="https://github.com/Dhruvil-8" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/DhruvilPatel__" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="#top">Back to top ↑</a>
       </div>
-      <p class="text-sm text-muted">
-        © <span id="year"></span> Dhruvil Patel.
-      </p>
     </div>
   </footer>
 
   <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
     // Theme toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-    const yearSpan = document.getElementById('year');
+    const htmlEl = document.documentElement;
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const isDark = htmlEl.classList.toggle('dark');
+      try {
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      } catch (_) {}
+    });
 
-    yearSpan.textContent = new Date().getFullYear();
-
-    // Check system preference or localStorage
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      html.classList.add('dark');
-    } else {
-      html.classList.remove('dark');
-    }
-
-    themeToggle.addEventListener('click', () => {
-      if (html.classList.contains('dark')) {
-        html.classList.remove('dark');
-        localStorage.theme = 'light';
-      } else {
-        html.classList.add('dark');
-        localStorage.theme = 'dark';
-      }
+    // Mobile drawer
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const drawer = document.getElementById('mobile-drawer');
+    menuBtn.addEventListener('click', () => {
+      const open = drawer.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      drawer.setAttribute('aria-hidden', String(!open));
+    });
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        drawer.setAttribute('aria-hidden', 'true');
+      });
     });
 
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(el => observer.observe(el));
+    } else {
+      reveals.forEach(el => el.classList.add('active'));
+    }
 
-    reveals.forEach(reveal => observer.observe(reveal));
+    // Cosmic ASCII Spiral Hero Canvas
+    (function initAsciiHero() {
+      const canvas = document.getElementById('ascii-hero');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
 
-    // Smooth scroll for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const glyphs = ' .:-=+*#%@';
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let width = 0;
+      let height = 0;
+      let cols = 0;
+      let rows = 0;
+      let cellW = 11;
+      let cellH = 16;
+      let pointerX = 0.5;
+      let pointerY = 0.5;
+      let rafId = null;
+
+      function resize() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const rect = canvas.getBoundingClientRect();
+        width = rect.width;
+        height = rect.height;
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        cellW = width < 640 ? 10 : 12;
+        cellH = width < 640 ? 14 : 17;
+        cols = Math.ceil(width / cellW);
+        rows = Math.ceil(height / cellH);
+        ctx.font = `${cellH - 3}px "JetBrains Mono", monospace`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+      }
+
+      window.addEventListener('pointermove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        if (!rect.width || !rect.height) return;
+        pointerX = (e.clientX - rect.left) / rect.width;
+        pointerY = (e.clientY - rect.top) / rect.height;
+      }, { passive: true });
+
+      function render(time) {
+        const t = time * 0.00038;
+        const isDark = htmlEl.classList.contains('dark');
+        ctx.clearRect(0, 0, width, height);
+
+        const cx = cols * (0.5 + (pointerX - 0.5) * 0.04);
+        const cy = rows * (0.46 + (pointerY - 0.5) * 0.04);
+        const maxR = Math.hypot(cols * 0.5, rows * 0.5);
+
+        for (let r = 0; r < rows; r++) {
+          for (let c = 0; c < cols; c++) {
+            const dx = (c - cx) * (cellW / cellH);
+            const dy = (r - cy) * 1.18;
+            const dist = Math.hypot(dx, dy);
+            const normDist = dist / maxR;
+
+            if (normDist > 0.96) continue;
+
+            const angle = Math.atan2(dy, dx);
+            const spiral = Math.sin(angle * 2.0 - dist * 0.44 + t * 2.2);
+            const secondary = Math.cos(angle * 3.0 - dist * 0.25 - t * 1.3);
+            const coreGlow = Math.exp(-dist * 0.14);
+            const centerClear = Math.min(1, Math.max(0.14, (dist - 5) / 14));
+            const band = ((spiral * 0.55 + secondary * 0.25 + 0.55) * (1 - normDist * 0.85) + coreGlow * 0.45) * centerClear;
+
+            if (band < 0.22) continue;
+
+            const idx = Math.min(glyphs.length - 1, Math.max(1, Math.floor(band * (glyphs.length - 1))));
+            const ch = glyphs[idx];
+
+            const warmMix = Math.max(0, Math.min(1, coreGlow * 1.1 + (spiral > 0.45 ? 0.35 : 0)));
+            const alpha = Math.min(0.55, Math.max(0.05, band * (isDark ? 0.45 : 0.26)));
+
+            if (isDark) {
+              const rCol = Math.round(135 + warmMix * 115);
+              const gCol = Math.round(170 + warmMix * 45);
+              const bCol = Math.round(235 - warmMix * 85);
+              ctx.fillStyle = `rgba(${rCol}, ${gCol}, ${bCol}, ${alpha.toFixed(3)})`;
+            } else {
+              const rCol = Math.round(45 + warmMix * 110);
+              const gCol = Math.round(52 + warmMix * 55);
+              const bCol = Math.round(68 - warmMix * 30);
+              ctx.fillStyle = `rgba(${rCol}, ${gCol}, ${bCol}, ${alpha.toFixed(3)})`;
+            }
+
+            ctx.fillText(ch, c * cellW + cellW * 0.5, r * cellH + cellH * 0.5);
+          }
         }
+
+        if (!reducedMotion) {
+          rafId = requestAnimationFrame(render);
+        }
+      }
+
+      resize();
+      window.addEventListener('resize', () => {
+        resize();
+        if (reducedMotion) render(0);
       });
-    });
+
+      if (reducedMotion) {
+        render(0);
+      } else {
+        rafId = requestAnimationFrame(render);
+      }
+    })();
   </script>
 </body>
 
